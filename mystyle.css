@@ -1,0 +1,22 @@
+body{
+    background-color:antiquewhite;
+    text-align: center;
+}
+h1 {
+    color: hotpink;
+    font-size: 30px;
+    font-family: TH Saraban New;
+    text-align: center;
+}
+h2 {
+    color: indigo;
+    font-size: 30px;
+    font-family: TH Saraban New;
+    text-align: center;
+}
+p {
+    color: sienna;
+    font-size: 30px;
+    font-family: TH Saraban New;
+    text-align: center;
+}
