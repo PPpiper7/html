@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<title>my Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: darkviolet;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: palegoldenrod;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 500px; /* only for demonstration, should be removed */
+  background: rgb(39, 202, 113);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: grey;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(137, 182, 14);
+  padding: 10px;
+  text-align: center;
+  color: tomato;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2 align="center">CSS test</h2>
+
+<header>
+  <h2>Armament</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="C:\Users\bodyr\Desktop\0\css-try-template.html">เครื่องบิน</a></li>
+      <li><a href="C:\Users\bodyr\Desktop\0\css-try-template-2.html">รถถัง</a></li>
+      <li><a href="C:\Users\bodyr\Desktop\0\css-try-template-3.html">เรือดำน้ำ</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>รายการสินค้า[เครื่องบิน]</h1>
+    <table border="1">
+      <tr>
+        <th><img src="F22.jpg" alt="F22" width="220px"></th>
+        <th><img src="Mig29.jpg" alt="Mig29" width="220px"></th>
+        <th><img src="X29.jpg" alt="X29" width="220px"></th>
+      </tr>
+      <tr>
+        <th>1.F-22</th>
+        <th>2.Mig-29</th>
+        <th>3.X-29</th>
+      </tr>
+    </table>
+  </article>
+</section>
+
+<footer>
+  <p><a href="https://www.facebook.com/phiraphon.thueanpan">Contact</a></p>
+</footer>
+
+</body>
+</html>
